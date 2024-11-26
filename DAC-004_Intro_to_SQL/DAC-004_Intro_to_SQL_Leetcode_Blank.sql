@@ -24,7 +24,7 @@ VALUES
 	(10),
 	(12),
 	(16);
--- Explore the table:
+-- Explore the table:c
 
 SELECT *
 FROM myownschema.numbers;
@@ -41,7 +41,13 @@ col1 col2 col3
 */
 
 -- Answer
-
+SELECT DISTINCT n1.index AS col1,
+                n2.index AS col2,
+                n3.index AS col3
+FROM myownschema.numbers n1
+JOIN myownschema.numbers n2 ON n2.index = n1.index + 1
+JOIN myownschema.numbers n3 ON n3.index = n1.index + 2
+ORDER BY n1.index;
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Run these once!
@@ -65,6 +71,18 @@ FROM myownschema.stars;
 
 
 -- Triangle Answer: 
+SELECT 
+    row_num,
+    CASE 
+        WHEN row_num = 1 THEN '***'
+        WHEN row_num = 2 THEN '**'
+        WHEN row_num = 3 THEN '*'
+        ELSE ''
+    END AS triangle_pattern
+FROM 
+    myownschema.stars
+WHERE 
+    row_num BETWEEN 1 AND 3;
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------

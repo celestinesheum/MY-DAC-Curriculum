@@ -11,14 +11,23 @@
 -- humanresources.employee table
 
 --Answer
-
+SELECT*
+FROM humanresources.employee
+ORDER BY jobtitle ASC;
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Q2: From the following table person.person write a query in SQL to return all rows and a subset of the columns (firstName, lastName, businessentityid) from the person table in the AdventureWorks database. 
 -- The third column heading is renamed to employee_id. Arranged the output in ascending order by lastname.
 
 --Answer
-
+SELECT 
+    firstName,
+    lastName,
+    businessentityid AS employee_id
+FROM 
+    person.person
+ORDER BY 
+    lastName ASC;
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Q3: From the following table write a query in SQL to return only the rows for product that have a sellstartdate that is not NULL and a productline of 'T'. 
@@ -27,6 +36,18 @@
 -- production.product
 
 --Answer
+SELECT 
+    productid,
+    productnumber,
+    name AS productname
+FROM 
+    production.product
+WHERE 
+    sellstartdate IS NOT NULL 
+    AND productline = 'T'
+ORDER BY 
+    name ASC;
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -36,6 +57,15 @@
 -- sales.salesorderheader
 
 --Answer
+SELECT 
+    customerid,
+    SUM(freight) AS total_freight
+FROM 
+    sales.salesorderheader
+GROUP BY 
+    customerid
+ORDER BY 
+    customerid ASC;
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -45,6 +75,15 @@
 -- person.businessentityaddress
 
 --Answer
+SELECT 
+    city,
+    COUNT(*) AS number_of_employees
+FROM 
+    employees
+GROUP BY 
+    city
+ORDER BY 
+    city ASC;
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
