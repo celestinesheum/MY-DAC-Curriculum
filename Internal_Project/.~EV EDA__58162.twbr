@@ -1916,7 +1916,7 @@
       </cards>
       <simple-id uuid='{7AA29655-2527-4886-A760-584A4346EC5F}' />
     </window>
-    <window class='worksheet' name='Chicago Station ID count'>
+    <window class='worksheet' maximized='true' name='Chicago Station ID count'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1945,7 +1945,7 @@
       </cards>
       <simple-id uuid='{E6C53400-269F-43BC-BC01-136FCE94DD06}' />
     </window>
-    <window class='worksheet' maximized='true' name='Los Angelas Station ID count'>
+    <window class='worksheet' name='Los Angelas Station ID count'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2006,7 +2006,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{670E6BB4-B364-4243-A824-AAEAEE65101A}' />
     </window>
   </windows>
