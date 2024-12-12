@@ -2,7 +2,7 @@
 *DS_Store*
 .DS_Store/
 DAC-009_Hands_On_SQL_Tutorial
-Internal_Project/*.csv
+Internal_Project/datasets/*.csv
 additional/
 DAC-006_Machine_Learning/datasets/*.csv
 .venv/
