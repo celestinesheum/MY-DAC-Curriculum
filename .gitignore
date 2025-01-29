@@ -1,3 +1,4 @@
+SUBMISSION_2024/dataset/*.csv
 .DS_Store
 *DS_Store*
 .DS_Store/
@@ -6,5 +7,4 @@ Internal_Project/datasets/*.csv
 additional/
 DAC-006_Machine_Learning/datasets/*.csv
 .venv/
-DAC-008_Intro_To_NLP/datasets/*.csv
-SUBMISSION_2024/dataset/*.csv
+DAC-008_Intero_To_NLP/datasets/*.csv
