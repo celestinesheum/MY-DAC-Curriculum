@@ -7,3 +7,4 @@ additional/
 DAC-006_Machine_Learning/datasets/*.csv
 .venv/
 DAC-008_Intro_To_NLP/datasets/*.csv
+Internal_Project/SUBMISSION_2024/dataset/*.csv
